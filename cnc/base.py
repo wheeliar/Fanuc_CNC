@@ -52,7 +52,7 @@ class CNC(object):
         self.ip = ip
         self.port = port
         if win32:
-            self.lib_so = windll.LoadLibrary('./fwlibe1.dll')
+            self.lib_so = windll.LoadLibrary('./fwlibe64.dll')
         else:
             self.lib_so = cdll.LoadLibrary('./libfwlib32-linux-x64.so')
 
